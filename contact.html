@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Co working web</title>
+
+    <!--  Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <!--  Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+
+    <!--  Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--  Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--  Custom CSS Files -->
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+    <div class="home-page-wrapper">
+        <header>
+            <div class="">
+                <nav class="d-flex justify-content-between align-items-center  py-3" id="navbar">
+                    <div class="logo">
+                        <img src="assets/images/Logo.png" alt="">
+                    </div>
+
+                    <div class="hamburger" id="hamburger">&#9776;</div>
+
+
+                    <div class="nav-links d-flex gap-5 align-items-center " id="navMenu">
+                        <div class="close-btn1" id="closeBtn1">&times;</div>
+                        <ul class="d-flex  list-unstyled gap-5 mt-3">
+                            <li><a href="#price" class="nav-a">About</a></li>
+                            <li><a href="#pricing" class="nav-a">Pricing</a></li>
+                            <li><a href="#blog" class="nav-a">Blog</a></li>
+                            <li><a href="#contact" class="nav-a">Contact</a></li>
+                        </ul>
+                        <div class="header-btns d-flex gap-4">
+                            <button class="primary-btn btn btn-outline-black">Login</button>
+                            <button class="secondary-btn btn btn-primary">Sign Up</button>
+                        </div>
+                    </div>
+
+
+                </nav>
+            </div>
+        </header>
+
+        <div class="contact-page-content">
+            <div class="container1">
+
+                <section class="contact-hero-section">
+                    <div class="contact-main-card">
+                        <div class="contact-text-div d-flex justify-content-between">
+                            <div class="contact-heading col-5">
+                                <h1>Contact Us</h1>
+                            </div>
+                            <div class="contact-hero-text-p col-5 d-flex justify-content-end align-items-end">
+                                <p>Have questions about our coworking space and membership plans? Drop us a line using the form below or give us a call.</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-content d-flex">
+                            <div class="location col-4">
+                                <div class="location-heading">
+                                    <h3>Call Us At</h3>
+                                    <p>(555) 555-5555</p>
+                                </div>
+
+                                <div class="location-heading">
+                                    <h3>Office Hours</h3>
+                                    <p>Monday-Friday: 9am - 6pm
+                                        <br>Saturday: 9am - 3pm <br>Closed Sundays</p>
+                                </div>
+
+                                <div class="location-heading">
+                                    <h3>Loaction</h3>
+                                    <p>123 Coworking Street
+                                        <br>Anycity, State 12345</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-form">
+                                <form id="contactForm" class="contact-form">
+                                    <div class="row">
+                                        <!-- Name Field -->
+                                        <div class="name-field">
+                                            <input type="text" id="firstName" name="firstName" placeholder="First Name*" required />
+                                            <input type="text" id="lastName" name="lastName" placeholder="Last Name*" required />
+                                        </div>
+
+                                        <!-- Email Field -->
+                                        <div class="email-field">
+                                            <input type="email" id="email" name="email" placeholder="Email Address*" required />
+                                        </div>
+
+                                        <!-- Phone Field -->
+                                        <div class="phone-field">
+                                            <input type="tel" id="phone" name="phone" placeholder="Phone*" required pattern="[0-9]{10}" />
+                                        </div>
+
+                                        <!-- Plan Field -->
+                                        <div class="plan-field">
+                                            <select class="form-select form-control" id="plan" required>
+        <option value="">Select a plan</option>
+        <option value="Hot Desk">Hot Desk</option>
+        <option value="Dedicated Desk">Dedicated Desk</option>
+        <option value="Private Desk">Private Desk</option>
+      </select>
+                                        </div>
+
+                                        <!-- Message Field -->
+                                        <div class="message-field">
+                                            <textarea class="form-control" id="message" name="message" placeholder="Message*" required></textarea>
+                                        </div>
+
+                                        <!-- Submit -->
+                                        <button type="submit" class="primary-btn btn btn-outline-black">Submit</button>
+                                    </div>
+
+                                    <p>
+                                        We aim to respond to all inquiries within 24 business hours. For the fastest response, please include your preferred membership plan of interest and any specific questions you may have. One of our workspace specialists will be happy to assist you further.
+                                    </p>
+                                </form>
+
+                            </div>
+
+
+
+
+                        </div>
+
+                </section>
+
+
+
+                <footer class="footer">
+                    <div class="row footer-content d-flex flex-row ">
+                        <div class="footer-div1 col-5">
+                            <img src="assets/images/footer-Logo.png" alt="">
+                            <p class="footer-div1-p">Join our newsletter to stay up to date on features and releases.</p>
+
+                            <div class="footer-form d-flex">
+                                <input type="email" placeholder="Enter your email">
+                                <button class="primary-btn btn btn-outline-black">Subscribe</button>
+                            </div>
+                            <p class="footer-div1-below-p">By subscribing you agree to with our Privacy Policy and provide consent to receive updates from our company.</p>
+                        </div>
+
+                        <div class="footer-div2 col-6 d-flex">
+                            <div class="footer-card2 ">
+                                <h3>Explore More</h3>
+                                <ul class="list-unstyled">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="price.html">price</a></li>
+                                    <li><a href="price.html">Pricing</a></li>
+                                    <li><a href="index.html">Blog</a></li>
+                                    <li><a href="index.html">Events</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="footer-card3 ">
+                                <h3>Stay connected</h3>
+                                <ul class="list-unstyled">
+                                    <li><a href="index.html">Subscribe</a></li>
+                                    <li><a href="price.html">Memeber Stores</a></li>
+                                    <li><a href="price.html">Locations</a></li>
+                                    <li><a href="index.html">Write for Us</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="footer-card4 ">
+                                <h3>Follow Us</h3>
+                                <ul class="list-unstyled">
+                                    <li><a href="index.html">Facebook</a></li>
+                                    <li><a href="price.html">Instagram</a></li>
+                                    <li><a href="price.html">X</a></li>
+                                    <li><a href="index.html">LinkedIn</a></li>
+                                    <li><a href="index.html">Youtube</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row credits d-flex justify-content-between">
+                        <div class="credit-div1 col-3 p-0">
+                            <p>© 2024 Cowork. All rights reserved.</p>
+                        </div>
+                        <div class="credit-div2 col-5 p-0">
+                            <ul class="d-flex justify-content-end">
+                                <li><a href="">Privacy Policy</a></li>
+                                <li>
+                                    <a href="">Terms of Service</a>
+                                </li>
+                                <li><a href="">Cookies Settings</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </footer>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+
+
+
+        <!--  jQuery (Required for Owl Carousel and other plugins) -->
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-..." crossorigin="anonymous"></script>
+
+        <!--  Owl Carousel JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-..." crossorigin="anonymous"></script>
+
+        <!--  Bootstrap 5 JS Bundle (includes Popper) -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+        <!--  Custom JS File -->
+        <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

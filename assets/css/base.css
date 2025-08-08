@@ -17,13 +17,13 @@
     --p-font-size: 16px;
     --p-font-weight: medium;
     --p-blog-font-size: 16px;
-    --p-blog-font-weight: medium;
+    --p-blog-font-weight: 500;
     --blockquote-font-size: 24px;
     --blockquote-font-weight: medium;
     --small-font-size: 14px;
-    --small-font-weight: regular;
+    --small-font-weight: 600;
     --subtitle-font-size: 12px;
-    --subtitle-font-weight: semibold;
+    --subtitle-font-weight: 600;
     --section-bg-color: #000000;
     --section-second-bg-color: #3139FB;
     --bg-color: #FFFFFF;
@@ -35,3 +35,8 @@
     --font-family1: "Oswald", sans-serif;
     --font-family2: "Roboto", sans-serif;
 }
+
+
+
+
+

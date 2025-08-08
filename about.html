@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Co working web</title>
+
+    <!--  Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+
+
+    <!--  Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+
+    <!--  Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--  Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom CSS Files -->
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <div class="home-page-wrapper">
+        <header>
+            <div class="">
+                <nav class="d-flex justify-content-between align-items-center py-3" id="navbar">
+                    <div class="logo">
+                        <img src="assets/images/Logo.png" alt="" />
+                    </div>
+
+                    <div class="hamburger" id="hamburger">&#9776;</div>
+
+                    <div class="nav-links d-flex gap-5 align-items-center" id="navMenu">
+                        <div class="close-btn1" id="closeBtn1">&times;</div>
+                        <ul class="d-flex list-unstyled gap-5 mt-3">
+                            <li><a href="#about" class="nav-a">About</a></li>
+                            <li><a href="#pricing" class="nav-a">Pricing</a></li>
+                            <li><a href="#blog" class="nav-a">Blog</a></li>
+                            <li><a href="#contact" class="nav-a">Contact</a></li>
+                        </ul>
+                        <div class="header-btns d-flex gap-4">
+                            <button class="primary-btn btn btn-outline-black">Login</button>
+                            <button class="secondary-btn btn btn-primary">Sign Up</button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div class="about-page-content">
+            <div class="container1">
+                <section class="about-hero-section">
+                    <div class="about-main-card">
+                        <div class="about-text-div d-flex justify-content-between">
+                            <div class="about-heading col-5">
+                                <h1>About Our Coworking Space</h1>
+                            </div>
+                            <div class="about-hero-text-p col-5 d-flex justify-content-end align-items-end">
+                                <p>
+                                    We're on a mission to reshape how people work and create by providing elevated coworking experiences.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- <div class="row about-cards">
+                <div class="col-xl-3 about-card1">
+                  <div class="about-text1">
+                    <img src="assets/images/about-collapse1.png" alt="" />
+                  </div>
+                  <div class="about-text2 d-flex">
+                    <div class="about-collapse-text">
+                      <h3>Our Story</h3>
+
+                      <div class="about-collapse-subtext-one">
+                        <p>
+                          Cowork was founded in 2023 by Jensen Turner who saw an
+                          unmet need for dynamic, design-focused coworking
+                          spaces that foster connection and productivity. What
+                          started as a modest shared office has grown into
+                          Delaware premier coworking destination serving
+                          freelancers, startups, remote teams and more.
+                        </p>
+                        <h3>1</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+
+                <div class="col-xl-3 about-card2">
+                  <div class="about-text1">
+                    <img src="assets/images/about-collapse2.png" alt="" />
+                  </div>
+                  <div class="about-text2 d-flex flex-column">
+                    <div class="about-collapse-text">
+                      <h3>Our Story</h3>
+                    </div>
+                    <div class="about-collapse-subtext">
+                      <p>Tap to expand</p>
+                      <h3>2</h3>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-3 about-card2">
+                  <div class="about-text1">
+                    <img src="assets/images/about-collapse3.png" alt="" />
+                  </div>
+                  <div class="about-text2 d-flex flex-column">
+                    <div class="about-collapse-text">
+                      <h3>Our Community</h3>
+                    </div>
+                    <div class="about-collapse-subtext">
+                      <p>Tap to expand</p>
+                      <h3>3</h3>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+
+                        <div class="row about-cards">
+
+                            <div class="col-xl-3 about-card1" id="aboutCard1">
+                                <div class="about-text1">
+                                    <img src="assets/images/about-collapse1.png" alt="" id="aboutCardImg" />
+                                </div>
+                                <div class="about-text2 d-flex">
+                                    <div class="about-collapse-text">
+                                        <h3 id="cardTitle">Our Story</h3>
+                                        <div class="about-collapse-subtext-one">
+                                            <p id="cardContent">Placeholder text</p>
+                                            <h3 id="cardNumber">1</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-xl-3 about-card2" data-card="1">
+                                <div class="about-text1">
+                                    <img src="assets/images/about-collapse2.png" alt="" />
+                                </div>
+                                <div class="about-text2 d-flex flex-column">
+                                    <div class="about-collapse-text">
+                                        <h3>Our Story</h3>
+                                    </div>
+                                    <div class="about-collapse-subtext">
+                                        <p class="expand-toggle-text">Tap to expand</p>
+
+                                        <h3>1</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-xl-3 about-card2" data-card="2">
+                                <div class="about-text1">
+                                    <img src="assets/images/about-collapse3.png" alt="" />
+                                </div>
+                                <div class="about-text2 d-flex flex-column">
+                                    <div class="about-collapse-text">
+                                        <h3>Our Community</h3>
+                                    </div>
+                                    <div class="about-collapse-subtext">
+                                        <p class="expand-toggle-text">Tap to expand</p>
+
+                                        <h3>2</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="faq-section">
+                    <div class="faq-content d-flex gap-5">
+                        <div class="faq-heading col-4 d-flex flex-column justify-content-between">
+                            <div class="faq-heading-text">
+                                <p class="text-uppercase">Frequently Asked Questions</p>
+                                <h2>Your Roadmap to Coworking Clarity</h2>
+                            </div>
+                            <div class="faq-heading-description">
+                                <p>
+                                    Frequently asked questions ordered by popularity. Remember that if the visitor has not committed to the call to action, they may still have questions (doubts) that can be answered.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-accordian col-7">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item py-3 mb-3 rounded-5 border border-black">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        How flexible are Cowork's membership plans?
+                      </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>
+                                                Frequently asked questions ordered by popularity. Remember that if the visitor has not committed to the call to action, they may still have questions (doubts) that can be answered.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item py-3 mb-3 rounded-5 border border-black">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        How flexible are Cowork's membership plans?
+                      </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>
+                                                Frequently asked questions ordered by popularity. Remember that if the visitor has not committed to the call to action, they may still have questions (doubts) that can be answered.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item py-3 mb-3 rounded-5 border border-black">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        How flexible are Cowork's membership plans?
+                      </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>
+                                                Frequently asked questions ordered by popularity. Remember that if the visitor has not committed to the call to action, they may still have questions (doubts) that can be answered.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item py-3 mb-3 rounded-5 border border-black">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        How flexible are Cowork's membership plans?
+                      </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>
+                                                Frequently asked questions ordered by popularity. Remember that if the visitor has not committed to the call to action, they may still have questions (doubts) that can be answered.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item py-3 mb-3 rounded-5 border border-black">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        How flexible are Cowork's membership plans?
+                      </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>
+                                                Frequently asked questions ordered by popularity. Remember that if the visitor has not committed to the call to action, they may still have questions (doubts) that can be answered.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="cta">
+                    <div class="cta-content">
+                        <div class="cta-heading text-center col-xl-12 d-flex flex-column justify-content-center align-items-center">
+                            <h1 class="text-uppercase">
+                                Seize
+                                <span><img src="assets/images/capsule_Img2.png" alt=""
+                  /></span> The Moment
+                            </h1>
+                            <h1 class="text-uppercase">Join Cowork Today!</h1>
+                            <p>
+                                Uncover the transformative power of Cowork as echoed by those who've made it their professional haven. This is more than finding a desk; it's discovering a community that fuels your journey to success.
+                            </p>
+                            <div class="cta-btn">
+                                <button class="btn btn-outline-primary">
+                    Claim Your Spot
+                  </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <footer class="footer">
+                    <div class="row footer-content d-flex flex-row">
+                        <div class="footer-div1 col-5">
+                            <img src="assets/images/footer-Logo.png" alt="" />
+                            <p class="footer-div1-p">
+                                Join our newsletter to stay up to date on features and releases.
+                            </p>
+
+                            <div class="footer-form d-flex">
+                                <input type="email" placeholder="Enter your email" />
+                                <button class="primary-btn btn btn-outline-black">
+                    Subscribe
+                  </button>
+                            </div>
+                            <p class="footer-div1-below-p">
+                                By subscribing you agree to with our Privacy Policy and provide consent to receive updates from our company.
+                            </p>
+                        </div>
+
+                        <div class="footer-div2 col-6 d-flex">
+                            <div class="footer-card2">
+                                <h3>Explore More</h3>
+                                <ul class="list-unstyled">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">about</a></li>
+                                    <li><a href="about.html">Pricing</a></li>
+                                    <li><a href="index.html">Blog</a></li>
+                                    <li><a href="index.html">Events</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="footer-card3">
+                                <h3>Stay connected</h3>
+                                <ul class="list-unstyled">
+                                    <li><a href="index.html">Subscribe</a></li>
+                                    <li><a href="about.html">Memeber Stores</a></li>
+                                    <li><a href="about.html">Locations</a></li>
+                                    <li><a href="index.html">Write for Us</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="footer-card4">
+                                <h3>Follow Us</h3>
+                                <ul class="list-unstyled">
+                                    <li><a href="index.html">Facebook</a></li>
+                                    <li><a href="about.html">Instagram</a></li>
+                                    <li><a href="about.html">X</a></li>
+                                    <li><a href="index.html">LinkedIn</a></li>
+                                    <li><a href="index.html">Youtube</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row credits d-flex justify-content-between">
+                        <div class="credit-div1 col-3 p-0">
+                            <p>© 2024 Cowork. All rights reserved.</p>
+                        </div>
+                        <div class="credit-div2 col-5 p-0">
+                            <ul class="d-flex justify-content-end">
+                                <li><a href="">Privacy Policy</a></li>
+                                <li>
+                                    <a href="">Terms of Service</a>
+                                </li>
+                                <li><a href="">Cookies Settings</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <!--  jQuery (Required for Owl Carousel and other plugins) -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-..." crossorigin="anonymous"></script>
+
+    <!--  Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-..." crossorigin="anonymous"></script>
+
+    <!--  Bootstrap 5 JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+    <!--  Custom JS File -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
